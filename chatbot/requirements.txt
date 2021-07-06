@@ -1,0 +1,6 @@
+scipy
+numpy
+rasa
+sentence-transformers
+distance
+bs4

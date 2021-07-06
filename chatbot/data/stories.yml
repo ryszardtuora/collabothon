@@ -1,0 +1,24 @@
+version: "2.0"
+
+stories:
+
+
+- story: main
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: abilities
+  - action: utter_abilities
+  - intent: get_regulations
+  - action: utter_regulations
+
+
+
+- story: qa
+  steps:
+  - intent: qa
+  - action: action_qa
+  - intent: inform
+  - slot_was_set:
+    - qa_answer: "1" 
+  - action: action_qa_answer
