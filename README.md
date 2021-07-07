@@ -1,9 +1,9 @@
 # collabothon
 
-This repository contains the code for Covidius - a pandemic chatbot.
+This repository contains the code for Covidius - a pandemic chatbot using RASA.
 
-###The files have the following functions:
-####Base files:
+### The files have the following functions:
+#### Base files:
   - config.yml : the NLU and DM pipeline specification, listing all the components and their parameters 
   - endpoints.yml : connection with external applications (servers, messaging applications) 
   - credenrtials.yml : logging information for connecting with external services
@@ -12,7 +12,7 @@ This repository contains the code for Covidius - a pandemic chatbot.
   - data/rules.yml : deterministic rules for DM to choose actions
   - data/stories.yml : examples of longer interactions for training DM 
 
-####Extensions:
+#### Extensions:
   - CountryExtractor : NLU component for recognizing countries in user messages based on Levenshtein distance and a list of country names
   - countries.json : a list of country names for CountryExtractor
   - actions : Custom actions for QA, and fetching the data from APIs
