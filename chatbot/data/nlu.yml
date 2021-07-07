@@ -64,13 +64,13 @@ nlu:
 - intent: get_regulations
   examples: |
     - How is the state of fight against the pandemic?
-    - what is the status of the pandemic?
+    - what is the status of the pandemic laws?
     - what are the current regulations regarding covid?
-    - can you give me some new info about the epidemic
+    - can you give me some new info about the epidemic restrictions
     - how is the present state of coronavirus in Poland
     - what are the rules right now?
-    - has the situation changed?
-    - has anything of importance happened?
+    - has the situation with rules changed?
+    - has anything of importance happened regarding the restrictions?
     - are there any new important announcements?
     
 - intent: get_api

@@ -96,6 +96,6 @@ class ActionQAAnswer(Action):
         answer_index = int(tracker.get_slot("qa_answer"))
         answer = answers[answer_index]
         dispatcher.utter_message(answer)
-        return []
+        return [SlotSet("qa_answer", None)]
 
 

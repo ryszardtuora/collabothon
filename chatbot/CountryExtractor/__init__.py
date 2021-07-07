@@ -30,11 +30,6 @@ class CountryExtractor(Component):
                   }
         return entity
 
-    def weighing(self, dist_value, w1, w2):
-        maxlen = max([len(w1), len(w2)])
-        weighted = dist_value 
-        return weighted 
-
     def get_country(self, token):
         dists = [(distance.levenshtein(token, k, max_dist=1), k) for k in self.countries]
         pos_dists = [d for d in dists if d[0] >= 0]
@@ -58,9 +53,7 @@ class CountryExtractor(Component):
                 entities.append(self.convert_to_rasa(entity, 1))
         if entities:
             message.set("entities", entities, add_to_output=True)
-        with open("ab", "w") as f:
-            f.write(str(entities))
- 
+
         
     def persist(self, file_name, model_dir):
         pass
